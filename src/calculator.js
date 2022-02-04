@@ -37,7 +37,10 @@ export default class Calculator {
       age += 5;
     }
     if (veggies <= 7) {
-      age + veggies * 0.5;
+      age += veggies * 0.5;
+    }
+    else {
+      age += 4;
     }
     return Math.floor(age);
   }
