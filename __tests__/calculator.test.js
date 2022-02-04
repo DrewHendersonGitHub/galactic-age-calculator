@@ -17,4 +17,9 @@ describe('Calculator', () => {
     expect(calculator.convertVenus()).toEqual(48);
   });
 
+  test('should return the age converted into Mars years', () => {
+    const calculator = new Calculator(30);
+    expect(calculator.convertMars()).toEqual(15);
+  });
+
 });

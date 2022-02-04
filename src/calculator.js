@@ -10,4 +10,8 @@ export default class Calculator {
   convertVenus() {
     return Math.floor(this.age / 0.62);
   }
+  
+  convertMars() {
+    
+  }
 }
