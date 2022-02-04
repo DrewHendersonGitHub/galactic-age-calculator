@@ -16,6 +16,6 @@ export default class Calculator {
   }
   
   convertJupiter() {
-    
+    return Math.floor(this.age / 11.86);
   }
 }
