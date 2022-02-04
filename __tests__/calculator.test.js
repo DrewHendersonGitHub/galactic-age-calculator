@@ -12,4 +12,9 @@ describe('Calculator', () => {
     expect(calculator.convertMercury()).toEqual(125);
   });
 
+  test('should return the age converted into Venus years', () => {
+    const calculator = new Calculator(30);
+    expect(calculator.convertVenus()).toEqual(48);
+  });
+
 });
