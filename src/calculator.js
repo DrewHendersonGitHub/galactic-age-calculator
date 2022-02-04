@@ -1,3 +1,3 @@
-export default function Calculator() {
-  
+export default function Calculator(input) {
+  this.age = input;
 }
