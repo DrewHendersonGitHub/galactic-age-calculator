@@ -4,6 +4,6 @@ export default class Calculator {
   }
   
   convertMercury() {
-    
+    return this.age / 0.24;
   }
 }
