@@ -12,6 +12,6 @@ export default class Calculator {
   }
   
   convertMars() {
-    
+    return Math.floor(this.age / 1.88);
   }
 }
