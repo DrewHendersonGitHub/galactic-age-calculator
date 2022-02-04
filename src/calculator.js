@@ -1,3 +1,9 @@
-export default function Calculator(input) {
-  this.age = input;
+export default class Calculator {
+  constructor(age) {
+    this.age = age
+  }
+  
+  convertMercury() {
+    
+  }
 }
