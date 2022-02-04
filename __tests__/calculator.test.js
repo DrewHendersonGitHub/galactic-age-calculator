@@ -28,7 +28,7 @@ describe('Calculator', () => {
   });
 
   test('should return the average life expectancy', () => {
-    expect(calculator.lifeExpectancy()).toEqual(80);
+    expect(calculator.lifeExpectancy(4, 5, "male", 0)).toEqual(81);
   });
 
 });
