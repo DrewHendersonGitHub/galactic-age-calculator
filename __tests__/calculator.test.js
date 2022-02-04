@@ -1,30 +1,34 @@
 import Calculator from './../src/calculator.js';
 
 describe('Calculator', () => {
+  let calculator;
+  
+  beforeEach(() => {
+    calculator = new Calculator(30);
+  });
 
   test('should make a calculator object that holds an age', () => {
-    const calculator = new Calculator(30);
     expect(calculator.age).toEqual(30);
   });
 
   test('should return the age converted into Mercury years', () => {
-    const calculator = new Calculator(30);
     expect(calculator.convertMercury()).toEqual(125);
   });
 
   test('should return the age converted into Venus years', () => {
-    const calculator = new Calculator(30);
     expect(calculator.convertVenus()).toEqual(48);
   });
 
   test('should return the age converted into Mars years', () => {
-    const calculator = new Calculator(30);
     expect(calculator.convertMars()).toEqual(15);
   });
 
   test('should return the age converted into Jupiter years', () => {
-    const calculator = new Calculator(30);
     expect(calculator.convertJupiter()).toEqual(2);
+  });
+
+  test('should return the average life expectancy', () => {
+    expect(calculator.lifeExpectancy()).toEqual(80);
   });
 
 });
