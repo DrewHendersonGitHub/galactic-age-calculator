@@ -1,3 +1,7 @@
 #life-expectancy-form, #life-expectancy-response {
   display: none;
 }
+
+.box {
+  margin-right: 1em;
+}

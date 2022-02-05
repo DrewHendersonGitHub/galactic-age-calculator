@@ -6,12 +6,15 @@
 <body>
   <div class="container">
     <h1>Super Galactic Age Calculator</h1>
+
     <form id="calculator-form">
       <label for="age">Enter your age:</label>
       <input id="age" type="number" required>
-      <button type="submit">Submit</button>
+      <button type="submit">Go:</button>
     </form>
+
     <ul id="calculator-response"><hr></ul>
+
     <form id="life-expectancy-form">
       <hr>
       <div class="form-group">
@@ -22,16 +25,17 @@
         <label for="veggies">How many times do you eat vegetables per week?</label>
         <input id="veggies" type="number" placeholder="0"  required>
       </div>
-      <select class="form-control" id="gender">
+      <select class="box" id="gender">
         <option value="male">Male</option>
         <option value="female">Female</option>
       </select>
-      <select class="form-control" id="smoker">
-        <option value="no">No</option>
-        <option value="yes">Yes</option>
+      <select class="box" id="smoker">
+        <option value="no">I don't smoke</option>
+        <option value="yes">I do smoke</option>
       </select>
-      <button type="submit">Submit</button>
+      <button type="submit">Calculate</button>
     </form>
+
     <ul id="life-expectancy-response"><hr></ul>
   </div>
 </body>
