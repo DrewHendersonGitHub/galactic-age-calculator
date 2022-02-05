@@ -1,6 +1,6 @@
 export default class Calculator {
   constructor(age) {
-    this.age = age
+    this.age = age;
   }
   
   convertMercury() {
@@ -19,19 +19,10 @@ export default class Calculator {
     return Math.floor(this.age / 11.86);
   }
   
-  lifeExpectancy(excersise, veggies, gender, smoker) {
-    let age = 75;
-    if (gender === "female") {
-      age += 5;
-    }
-    if (smoker === 0) {
-      age += 5;
-    }
-    else {
-      age -= 2;
-    }
-    if (excersise < 20) {
-      age += excersise * 0.25;
+  lifeExpectancy(exercise, veggies, gender, smoker) {
+    let age = 70;
+    if (exercise < 20) {
+      age += exercise * 0.25;
     }
     else {
       age += 5;
@@ -41,6 +32,15 @@ export default class Calculator {
     }
     else {
       age += 4;
+    }
+    if (gender === "female") {
+      age += 5;
+    }
+    if (smoker === 0) {
+      age += 5;
+    }
+    else {
+      age -= 2;
     }
     return Math.floor(age);
   }

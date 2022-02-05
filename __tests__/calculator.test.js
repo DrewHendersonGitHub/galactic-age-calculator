@@ -28,11 +28,11 @@ describe('Calculator', () => {
   });
 
   test('should return the average life expectancy', () => {
-    expect(calculator.lifeExpectancy(0, 0, "male", 1)).toEqual(73);
+    expect(calculator.lifeExpectancy(0, 0, "male", 1)).toEqual(68);
   });
 
   test('should return the average life expectancy', () => {
-    expect(calculator.lifeExpectancy(25, 10, "female", 0)).toEqual(94);
+    expect(calculator.lifeExpectancy(25, 10, "female", 0)).toEqual(89);
   });
 
 });
