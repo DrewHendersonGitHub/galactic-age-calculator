@@ -36,7 +36,7 @@ export default class Calculator {
     if (gender === "female") {
       age += 5;
     }
-    if (smoker === 0) {
+    if (smoker === "no") {
       age += 5;
     }
     else {
