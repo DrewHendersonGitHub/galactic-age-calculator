@@ -19,7 +19,7 @@
 
 ## Description
 
-_Entering your age will show what your age would be if you were on Mercury, Venus, Mars, and Jupiter. You can also calculate your life expectancy by entering in personal information about their health. _
+_Entering your age will show what your age would be if you were on Mercury, Venus, Mars, and Jupiter. You can also calculate your life expectancy by entering in personal information about your health._
 
 ## Setup/Installation Requirements
 

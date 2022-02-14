@@ -1,22 +1,23 @@
 export default class Calculator {
   constructor(age) {
     this.age = age;
+    this.expectancy = 0;
   }
   
-  convertMercury() {
-    return Math.floor(this.age / 0.24);
+  convertMercury(age) {
+    return Math.floor(age / 0.24);
   }
   
-  convertVenus() {
-    return Math.floor(this.age / 0.62);
+  convertVenus(age) {
+    return Math.floor(age / 0.62);
   }
   
-  convertMars() {
-    return Math.floor(this.age / 1.88);
+  convertMars(age) {
+    return Math.floor(age / 1.88);
   }
   
-  convertJupiter() {
-    return Math.floor(this.age / 11.86);
+  convertJupiter(age) {
+    return Math.floor(age / 11.86);
   }
   
   lifeExpectancy(exercise, veggies, gender, smoker) {
@@ -42,6 +43,22 @@ export default class Calculator {
     else {
       age -= 2;
     }
-    return Math.floor(age);
+    this.expectancy = Math.floor(age);
+  }
+
+  mercuryLifeExpectancy() {
+    return Math.abs(this.convertMercury(this.age) - this.convertMercury(this.expectancy));
+  }
+
+  venusLifeExpectancy() {
+    return Math.abs(this.convertVenus(this.age) - this.convertVenus(this.expectancy));
+  }
+
+  marsLifeExpectancy() {
+    return Math.abs(this.convertMars(this.age) - this.convertMars(this.expectancy));
+  }
+
+  jupiterLifeExpectancy() {
+    return Math.abs(this.convertJupiter(this.age) - this.convertJupiter(this.expectancy));
   }
 }

@@ -12,27 +12,49 @@ describe('Calculator', () => {
   });
 
   test('should return the age converted into Mercury years', () => {
-    expect(calculator.convertMercury()).toEqual(125);
+    expect(calculator.convertMercury(30)).toEqual(125);
   });
 
   test('should return the age converted into Venus years', () => {
-    expect(calculator.convertVenus()).toEqual(48);
+    expect(calculator.convertVenus(30)).toEqual(48);
   });
 
   test('should return the age converted into Mars years', () => {
-    expect(calculator.convertMars()).toEqual(15);
+    expect(calculator.convertMars(30)).toEqual(15);
   });
 
   test('should return the age converted into Jupiter years', () => {
-    expect(calculator.convertJupiter()).toEqual(2);
+    expect(calculator.convertJupiter(30)).toEqual(2);
   });
 
   test('should return the average life expectancy', () => {
-    expect(calculator.lifeExpectancy(0, 0, "male", "yes")).toEqual(68);
+    calculator.lifeExpectancy(0, 0, "male", "yes")
+    expect(calculator.expectancy).toEqual(68);
   });
 
   test('should return the average life expectancy', () => {
-    expect(calculator.lifeExpectancy(25, 10, "female", "no")).toEqual(89);
+    calculator.lifeExpectancy(25, 10, "female", "no")
+    expect(calculator.expectancy).toEqual(89);
+  });
+
+  test('should return the average life expectancy in Mercury years', () => {
+    calculator.lifeExpectancy(9999, 9999, "male", "yes")
+    expect(calculator.mercuryLifeExpectancy()).toEqual(195);
+  });
+
+  test('should return the average life expectancy in Venus years', () => {
+    calculator.lifeExpectancy(12, 7, "female", "no")
+    expect(calculator.venusLifeExpectancy()).toEqual(90);
+  });
+
+  test('should return the average life expectancy in Mars years', () => {
+    calculator.lifeExpectancy(8, 0, "female", "yes")
+    expect(calculator.marsLifeExpectancy()).toEqual(24);
+  });
+
+  test('should return the average life expectancy in Jupiter years', () => {
+    calculator.lifeExpectancy(1, 77, "male", "no")
+    expect(calculator.jupiterLifeExpectancy()).toEqual(4);
   });
 
 });
